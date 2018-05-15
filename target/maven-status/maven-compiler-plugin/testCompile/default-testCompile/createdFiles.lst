@@ -1,1 +1,3 @@
 com\aplikasi\spring\aplikasipelatihan\AplikasiPelatihanApplicationTests.class
+com\aplikasi\spring\aplikasipelatihan\dao\PesertaDaoTest.class
+com\aplikasi\spring\aplikasipelatihan\dao\SesiDaoTest.class
