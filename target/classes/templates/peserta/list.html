@@ -1,0 +1,35 @@
+<html xmlns="https://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>sanQz | List</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>List Daftar Peserta</h1>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Tanggal Lahir</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="p : ${daftarPeserta}">
+                    <td th:text="${p.nama}"></td>
+                    <td th:text="${p.email}"></td>
+                    <td th:text="${p.tanggalLahir}"></td>
+                    <td>
+                        <a href="form.html" th:href="@{/peserta/form(id=${p.id})}">Edit</a> |
+                        <a href="view.html" th:href="@{/peserta/view(id=${p.id})}">Lihat</a> |
+                        <a href="hapus.html" th:href="@{/peserta/hapus(id=${p.id})}">Hapus</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
