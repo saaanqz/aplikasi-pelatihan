@@ -24,6 +24,7 @@ public class KonfigurasiSecurity extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login")
                 .permitAll()
+                .defaultSuccessUrl("/halo")
                 .and()
                 .logout()
                 .permitAll();
