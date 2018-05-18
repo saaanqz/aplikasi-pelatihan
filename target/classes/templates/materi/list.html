@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>sanQz | M-List</title>
+    </head>
+    <body ng-app="aplikasiPelatihan">
+        <h1>List Materi</h1>
+        <div ng-controller="HaloController">
+            Email anda : <input type="text" ng-model="email"><button ng-click="tambahEmail()">Tambahkan</button><br/>
+            {{email}}<br/>
+            Daftar Email : <br/>
+            <ul>
+                <li ng-repeat="e in daftarEmail">{{e}} <button ng-click="hapusEmail(e)">Hapus</button></li>
+            </ul>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+        <script src="/js/pelatihan.js"></script>
+    </body>
+</html>
