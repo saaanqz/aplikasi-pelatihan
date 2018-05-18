@@ -1,6 +1,10 @@
 com\aplikasi\spring\aplikasipelatihan\dao\SesiDao.class
-com\aplikasi\spring\aplikasipelatihan\dao\PesertaDao.class
 com\aplikasi\spring\aplikasipelatihan\entity\Peserta.class
+com\aplikasi\spring\aplikasipelatihan\controller\PesertaHtmlController.class
+com\aplikasi\spring\aplikasipelatihan\AplikasiPelatihanApplication.class
+com\aplikasi\spring\aplikasipelatihan\controller\HaloController.class
+com\aplikasi\spring\aplikasipelatihan\controller\PesertaController.class
+com\aplikasi\spring\aplikasipelatihan\dao\PesertaDao.class
 com\aplikasi\spring\aplikasipelatihan\entity\Sesi.class
 com\aplikasi\spring\aplikasipelatihan\entity\Materi.class
-com\aplikasi\spring\aplikasipelatihan\AplikasiPelatihanApplication.class
+com\aplikasi\spring\aplikasipelatihan\config\KonfigurasiSecurity.class
